@@ -1,0 +1,61 @@
+<html>
+    <head>
+    <title> Pizza Order Page  </title></head>
+    <style>
+header{
+    background-color: beige;
+    text-align: center;
+    width:1255;
+    height:30px;
+
+}
+form{
+    background-color: lightblue;
+}
+button{
+    width:300px;
+    height:25;
+}
+
+
+    </style>
+    
+<header><b>Welcome - we deliver pizza in 30 minutes</b></header>
+<body>
+<form action="order.php" method="get">
+<fieldset>
+<label for="email">Email</label><br>
+<input type="text" id="email" name="email">
+<br>
+<br>
+<label for="number">Phone</label>
+<input type="text" id="number" name="number" placeholder="Area">
+<input type="text" id="number2" name="number" placeholder="Local">
+<input type="text" id="number3" name="number" placeholder="Local">
+<br>
+<br>
+<label for="slices">Number of slices </label><br>
+<input type="text" id="slices" name="slices">
+<br>
+<br>
+<label for="size">Pizza Size</label><br>
+<input type="radio" id="size" name="size">8-inch
+<input type="radio" id="size2" name="size">10-inch
+<input type="radio" id="size3" name="size">12-inch
+<input type="radio" id="size4" name="size">14-inch
+<br>
+<br>
+<label for="toppings">Toppings</label><br>
+<input type="checkbox" id="toppings" name="toppings">Pepperoni
+<input type="checkbox" id="toppings" name="toppings">Onion
+<input type="checkbox" id="toppings" name="toppings">Mushrooms
+<input type="checkbox" id="toppings" name="toppings">Sausage
+<br>
+<br><label for="agreement" .required></label>
+<input type="checkbox" name="agreement"> I agree to the TERMS AND CONDITIONS
+<br>
+<br>
+<button type="button" id="button" name="button">Order Now</button>
+</fieldset>
+</form></body>
+</html>

@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Credit card payment </title>
+    </head>
+   <style>
+    fieldset{
+        border: 2px solid black;
+    }
+    header{
+        text-align: center;
+        background-color: lightblue;
+        color: white;
+        height: 30px;
+    }
+    form{
+        text-align: left;
+    }
+    button{
+        background-color: yellow;
+    }
+    label{
+        font-family: 'Times New Roman', Times, serif;
+        color: blue;
+    }
+    footer{text-align: center;
+        background-color: darkolivegreen;
+        color:black;
+        height: 30px;
+}
+
+   </style>
+    <form action="payemnt.php"  method="POST">
+       <fieldset><header>This is secure.You are safe</header>
+           
+            <label for="card">Credit card (visa mastercard)</label>
+            <input  type="radio" id="card type" name="card type">
+<img src ="download.jpg" width="30" height="20"/>
+<label for="card">Pay pal</label>
+<input type="radio" id="card type2" name="card type">
+<img src="download (1).jpg" width="30" height="25"/>
+        </br>
+    </br>
+        <label for="card number">Card number<sub>(The 16 digits infront of your Card)</sub></label>
+        <br/>
+<input type="text" id ="card number" name="card number">
+</br>
+<br>
+<label placeholder="MM/YY">Expiry Date</label>
+</br>
+<select id="expiry date" name="expiry date">
+    <option>Jan</option>
+    <option>Feb</option>
+    <option>Mar</option>
+    <option>Apr</option> 
+    <option>May</option>
+    <option>June</option>
+    <option>July</option>
+    <option>Aug</option>
+    <option>Sept</option> 
+    <option>Oct</option>
+    <option>Nov</option>
+    <option>Dec</option>
+</select>
+/
+<select id="expiry date" name="expiry date">
+    <option>2023</option>
+    <option>2024</option>
+    <option>2025</option>
+    <option>2026</option> 
+    <option>2027</option>
+</select><br><br>
+<label for="cvv" >CVV2/CVC2</label>
+<input type="password" id="cvv" name="cvv" maxlength="3"/><br><br>
+<label for="card holder name">Full name on the Card</label><br>
+<input type ="text" id="card holder name" name="card holder name">
+<br><br>
+<button type="submit">Complete transaction</button><footer>You will be charged every month</footer>
+</fieldset></form>
+    </html>
+
+
