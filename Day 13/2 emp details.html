@@ -1,0 +1,73 @@
+
+<html>
+<head>
+	<style>
+		div
+		{
+			border:3px dotted rgb(49, 109, 104);
+			color : rgb(164, 74, 0);
+			font-size: 20px;
+			height:  50px;
+			padding : 5px;
+			text-align: center;
+		} h2{
+			text-align: center;
+			color: darkgreen;
+
+		} .btn{
+			background-color: aqua;
+			
+		}
+	</style>
+</head>
+<body>
+<h2>Employee Details</h2>
+<hr/><center>
+<input class ="btn" type="button"   value="Object Initializer" onclick="f1()"  />
+<input class ="btn" type="button"   value="Empty Object" onclick="f2()"  />
+<input class ="btn" type="button"   value="Constructor Function" onclick="f3()"  /></center>
+<br></br>
+
+<div id="div1">	</div>
+
+<script> 
+var divObj = document.getElementById("div1");
+
+ function   f1()
+ {		
+		
+	    var   e1  = {empno  :  1025,  empname : "Sam" ,empsalary : 40000 };  	  
+ 		var str  = ` Employee Id : ${e1.empno} , Empname : ${e1.empname} , Empsalary : ${e1.empsalary}  `;
+ 		divObj.innerHTML  = str;
+}	
+
+function   f2()
+ {		
+	
+	var   e2  = {};    
+	e2.empno  = 3435;
+	e2.ename  = "Rose";
+	e2.empsalary=4000;			
+	 
+	var  str  = `Employee Id : ${e2.empno} ,   Emp Name  :  ${e2.ename},  Emp Salary : ${e2.empsalary}`;
+	divObj.innerHTML  = str;
+}	
+
+
+function  Employee()
+{
+	this.empno  = 4567;
+	this.empname  = "Manisha";
+	this.empsalary = 45678;
+}
+
+function   f3()
+ {		
+	var   e3  =  new Employee();	 		 
+	var  str  = `Employee Id : ${e3.empno} ,  Employee Name  :  ${e3.empname}, Employee Salary : ${e3.empsalary}`;	  
+	divObj.innerHTML  = str;
+}	
+ 
+</script>
+</body> 
+</html>
